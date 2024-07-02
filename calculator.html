@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-auto-rows: 80px;
+            width: 400px;
+            gap: 15px;
+        }
+        .child{
+            border: 1px solid black;
+        }
+        .op{
+            grid-column: 1/5;
+        }
+        .zero{
+            grid-column: 1/3;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .o{
+            background-color: orange;
+            display: grid;
+            align-items: center;
+            justify-content: end;
+            padding-right: 20px;
+        }
+        .g{
+            background-color: gray;
+        }
+        .lg{
+            background-color: lightgray;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Calculator using HTML and CSS</h1>
+    <div class="main " style="">
+        <div class="child op" style="border: 1px solid black; width: 500px;">123</div>
+            <button class="b lg">AC</button>
+            <button class="b lg">+/-</button>
+            <button class="b lg">%</button>
+            <button class="b o">/</button>
+            <button class="b g">7</button>
+            <button class="b g">8</button>
+            <button class="b g">9</button>
+            <button class="b o">*</button>
+            <button class="b g">4</button>
+            <button class="b g">5</button>
+            <button class="b g">6</button>
+            <button class="b o">-</button>
+            <button class="b g">1</button>
+            <button class="b g">2</button>
+            <button class="b g">3</button>
+            <button class="b o">+</button>
+            <button class="b zero g">0</button>
+            <button class="b g">.</button>
+            <button class="b o">=</button>
+    
+    </div>
+</body>
+</html>
